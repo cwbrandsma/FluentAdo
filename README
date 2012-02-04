@@ -1,10 +1,10 @@
-Project Description
 Fluent Ado.Net is a lightweight wrapper around Ado.Net, designed to be used in a fluent manner, encourage code reused, and make mapping to domain classes easier.
 
 Fluent Ado.Net was originally designed for the compact framework, but can be used in any .net project.
 
 An example of how Fluent Ado.Net code would look like in your project would be like this:
 
+<hr>
 public Customer ByID(Guid id)
 {
       const string sql = "SELECT ID, FirstName, LastName, BirthDay, Height, Weight FROM Customer WHERE ID = @id";
@@ -22,7 +22,7 @@ public Customer ByID(Guid id)
           )
           .AsSingle();
   }
-
+<hr>
   public List<Customer> List()
   {
       const string sql = "SELECT ID, FirstName, LastName, BirthDay, Height, Weight FROM Customer";
