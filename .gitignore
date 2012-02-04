@@ -1,0 +1,8 @@
+obj/
+*.user
+*.suo
+_Resharper*/
+bin/
+Web.Release.config
+.svn/
+*.zip

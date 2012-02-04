@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAdo.SqlServerCe.Tests", "FluentAdo.SqlServerCe.Tests\FluentAdo.SqlServerCe.Tests.csproj", "{9A73F296-9BA0-4733-A00A-7EA1EDFFFF93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAdo.SqlServer.Tests", "FluentAdo.SqlServer.Tests\FluentAdo.SqlServer.Tests.csproj", "{47453AEA-621B-41F8-868D-AE3B1EEACF03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAdo.Oledb", "FluentAdo.Oledb\FluentAdo.Oledb.csproj", "{1871EBF6-653B-4E13-B80B-B87552C9CBFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAdo.Oracle", "FluentAdo.Oracle\FluentAdo.Oracle.csproj", "{61B981A1-1937-489F-B2A9-209B096D3502}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAdo.SQLite", "FluentAdo.SQLite\FluentAdo.SQLite.csproj", "{C0E69305-38ED-42C1-9DCA-D3A35796036E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAdo.Generic", "FluentAdo.Generic\FluentAdo.Generic.csproj", "{47F1E0C3-0B23-4882-AD8D-C5DDBA989035}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A73F296-9BA0-4733-A00A-7EA1EDFFFF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A73F296-9BA0-4733-A00A-7EA1EDFFFF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A73F296-9BA0-4733-A00A-7EA1EDFFFF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A73F296-9BA0-4733-A00A-7EA1EDFFFF93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47453AEA-621B-41F8-868D-AE3B1EEACF03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47453AEA-621B-41F8-868D-AE3B1EEACF03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47453AEA-621B-41F8-868D-AE3B1EEACF03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47453AEA-621B-41F8-868D-AE3B1EEACF03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1871EBF6-653B-4E13-B80B-B87552C9CBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1871EBF6-653B-4E13-B80B-B87552C9CBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1871EBF6-653B-4E13-B80B-B87552C9CBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1871EBF6-653B-4E13-B80B-B87552C9CBFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61B981A1-1937-489F-B2A9-209B096D3502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B981A1-1937-489F-B2A9-209B096D3502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B981A1-1937-489F-B2A9-209B096D3502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B981A1-1937-489F-B2A9-209B096D3502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E69305-38ED-42C1-9DCA-D3A35796036E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E69305-38ED-42C1-9DCA-D3A35796036E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E69305-38ED-42C1-9DCA-D3A35796036E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E69305-38ED-42C1-9DCA-D3A35796036E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47F1E0C3-0B23-4882-AD8D-C5DDBA989035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47F1E0C3-0B23-4882-AD8D-C5DDBA989035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47F1E0C3-0B23-4882-AD8D-C5DDBA989035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47F1E0C3-0B23-4882-AD8D-C5DDBA989035}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

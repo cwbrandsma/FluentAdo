@@ -1,0 +1,5 @@
+<Configuration>
+  <NamespaceFolders>
+    <SkipFolder>BDE0D9E5-9CD0-4300-8C37-43BA96D200AB/d:Repository</SkipFolder>
+  </NamespaceFolders>
+</Configuration>
