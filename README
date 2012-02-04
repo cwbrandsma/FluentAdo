@@ -1,0 +1,50 @@
+Project Description
+Fluent Ado.Net is a lightweight wrapper around Ado.Net, designed to be used in a fluent manner, encourage code reused, and make mapping to domain classes easier.
+
+Fluent Ado.Net was originally designed for the compact framework, but can be used in any .net project.
+
+An example of how Fluent Ado.Net code would look like in your project would be like this:
+
+public Customer ByID(Guid id)
+{
+      const string sql = "SELECT ID, FirstName, LastName, BirthDay, Height, Weight FROM Customer WHERE ID = @id";
+      return new FluentCommand<Customer>(sql)
+          .AddGuid("id", id)
+          .SetMap(reader => new Customer
+                            {
+                                ID = reader.GetGuid("ID"),
+                                FirstName = reader.GetString("FirstName"),
+                                LastName = reader.GetString("LastName"),
+                                Birthday = reader.GetDateTime("Birthday"),
+                                Height = reader.GetIntNullable("Height"),
+                                Weight = reader.GetIntNullable("Weight")
+                            }
+          )
+          .AsSingle();
+  }
+
+  public List<Customer> List()
+  {
+      const string sql = "SELECT ID, FirstName, LastName, BirthDay, Height, Weight FROM Customer";
+      return new FluentCommand<Customer>(sql)
+          .SetMap(reader => new Customer
+                            {
+                                ID = reader.GetGuid("ID"),
+                                FirstName = reader.GetString("FirstName"),
+                                LastName = reader.GetString("LastName"),
+                                Birthday = reader.GetDateTime("Birthday"),
+                                Height = reader.GetIntNullable("Height"),
+                                Weight = reader.GetIntNullable("Weight")
+                            }
+          )
+          .AsList();
+
+  }
+
+That code executes the SQL statement, sets the id parameter, and maps the results to a Customer object, then returns the first one or null. That was technically one line of code. But more importantly, it was not much code. A lot less than what you would typically write for your usual Ado.Net.
+
+So have a look around, leave us a note/suggestion, and take what you want.
+
+Other Pages
+*Out params
+*Implementing Generic Provider
