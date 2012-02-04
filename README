@@ -4,7 +4,7 @@ Fluent Ado.Net was originally designed for the compact framework, but can be use
 
 An example of how Fluent Ado.Net code would look like in your project would be like this:
 
-<hr>
+--------------------------------------
 public Customer ByID(Guid id)
 {
       const string sql = "SELECT ID, FirstName, LastName, BirthDay, Height, Weight FROM Customer WHERE ID = @id";
@@ -22,7 +22,8 @@ public Customer ByID(Guid id)
           )
           .AsSingle();
   }
-<hr>
+
+--------------------------------------
   public List<Customer> List()
   {
       const string sql = "SELECT ID, FirstName, LastName, BirthDay, Height, Weight FROM Customer";
@@ -40,6 +41,7 @@ public Customer ByID(Guid id)
           .AsList();
 
   }
+--------------------------------------
 
 That code executes the SQL statement, sets the id parameter, and maps the results to a Customer object, then returns the first one or null. That was technically one line of code. But more importantly, it was not much code. A lot less than what you would typically write for your usual Ado.Net.
 
